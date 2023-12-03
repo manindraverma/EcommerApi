@@ -6,11 +6,11 @@ const port=8000;
 
 //initialize the express app
 const app=express();
+
 //using body parser to parse over the body
 app.use(bodyParser.urlencoded({extended:true}));
 
 //routing path
-
 app.use('/',require('./routers'));
 
 

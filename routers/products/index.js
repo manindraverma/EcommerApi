@@ -10,10 +10,11 @@ router.get('/', productsController.products);
 // to create a product
 router.post('/create', productsController.create);
 
+// to update the quantity of a product
+router.post('/:productID/update_quantity/', productsController.updateQunatity);
+
 // to delete a product using it's ID
 router.delete('/:productID', productsController.delete);
 
-// to update the quantity of a product
-router.post('/:productID/update_quantity/', productsController.updateQunatity);
 
 module.exports = router;
